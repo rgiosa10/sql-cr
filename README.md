@@ -2,7 +2,7 @@
 
 #### By Ruben Giosa
 
-#### This repo includes exercises for working with SQL database.
+#### This repo includes exercises for working with SQL database that include selecting values, performing subqueries, manipulating values in select, leveraging aggregate functions, and performing a join.
 
 <br>
 
@@ -10,6 +10,8 @@
 
 * SQL
 * Git
+* Docker
+* Beekeeper Studio
 * Markdown
 * `.gitignore`
 * `requirements.txt`
@@ -17,7 +19,9 @@
 </br>
 
 ## Description
-This code review showcases my SQL skills and leverages a database with data regarding Lego sets.
+This code review showcases my SQL skills and leverages a database with data regarding Lego sets. Techniques used that include selecting values, performing subqueries, manipulating values in select, leveraging aggregate functions, and performing a join. 
+
+The actual queries and exercises were performed in Beekeeper Studio and then the code was copied over into an SQL file.
 
 <br>
 
@@ -35,24 +39,33 @@ This code review showcases my SQL skills and leverages a database with data rega
   ```
 * Go to the new directory or open the directory folder on your desktop:
   ```bash
-  cd python-adv-cr
+  cd python-sql-cr
   ```
-* Once in the directory you will need to set up a virtual environment in your terminal:
-  ```bash
-  python3.7 -m venv venv
-  ```
-* Then activate the environment:
-  ```bash
-  source venv/bin/activate
-  ```
-* Install the necessary items with requirements.txt:
-  ```bash
-    pip install -r requirements.txt
-  ```
-* With your virtual environment now enabled with proper requirements, open the directory:
+* Open the directory:
   ```bash
   code .
   ```
+* You will also need to enable the MariaDB Docker container in order to connect to it for Beekeeper.
+* Go to https://github.com/rgiosa10/data-engineering-bootcamp.git
+* Then open your terminal. I recommend going to your Desktop directory:
+    ```bash
+    cd Desktop
+    ```
+* Then clone the repository by inputting: 
+  ```bash
+  git clone https://github.com/rgiosa10/data-engineering-bootcamp.git
+  ```
+*  Then go to data-engineering-bootcamp/deb/ch06_sql/graded-projects/ and start the MariaDB Docker container 
+  ```bash
+  ./start_db.sh
+  ```
+* Then go to Beekeeper and connect with the below information:
+    * host: 127.0.0.1
+    * user: root
+    * password: mysql
+    * port: 3306
+
+* Select the 'Lego' database. Then you can copy over the code from `code_review.sql` to run the SQL code in Beekeeper.
 
 </br>
 
