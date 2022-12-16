@@ -98,3 +98,11 @@ SELECT theme_id, AVG(num_parts) as avg_parts
 FROM sets
 GROUP BY theme_id;
 
+-- Joins Section:
+
+-- Using a free-form join (where the JOIN type isn't specified, equivalent to an inner join), join the parts and part_categories tables.
+-- Filter for values where the part_categories id matches the parts part_cat_id, and where the name of the part contains the word 'Werewolf'.
+
+SELECT *
+FROM parts as p, part_categories as pc
+WHERE p.part_cat_id = pc.id AND p.name like '%Werewolf%';
