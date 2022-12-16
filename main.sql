@@ -46,3 +46,12 @@ WHERE inventory_id in (
 	FROM inventories
 	WHERE version > 1)
 LIMIT 10;
+
+-- Manipulate Values in Select:
+
+-- Aliasing the sets table as 's', select the year and name of the values in that table that include the substring 'Batman'. 
+-- Concatenate three exclamation marks to the end of each name, and make all the names upper case.
+
+SELECT year, CONCAT(UPPER(name),'!!!')
+FROM sets as s
+WHERE name like '%Batman%';
