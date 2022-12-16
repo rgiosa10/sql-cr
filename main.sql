@@ -82,3 +82,7 @@ WHERE is_trans = 1;
 
 -- Show the sum of all the parts for all the sets that came out since the year 2000.
 
+SELECT SUM(num_parts) as total_parts
+FROM sets
+WHERE year > 1999;
+
