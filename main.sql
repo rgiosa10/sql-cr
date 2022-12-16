@@ -55,3 +55,13 @@ LIMIT 10;
 SELECT year, CONCAT(UPPER(name),'!!!')
 FROM sets as s
 WHERE name like '%Batman%';
+
+
+-- For every quantity value greater than 1 in the inventory_parts table, double the value of the quantity. 
+-- Limit your output to 20 rows, and order it by quantity.
+
+SELECT quantity, quantity * 2 AS quantity_mult_by_2
+FROM inventory_parts
+WHERE quantity > 1
+ORDER BY quantity
+LIMIT 20;
