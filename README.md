@@ -14,7 +14,6 @@
 * Beekeeper Studio
 * Markdown
 * `.gitignore`
-* `requirements.txt`
 
 </br>
 
@@ -52,13 +51,13 @@ The actual queries and exercises were performed in Beekeeper Studio and then the
     cd Desktop
     ```
 * Then clone the repository by inputting: 
-  ```bash
-  git clone https://github.com/rgiosa10/data-engineering-bootcamp.git
-  ```
+    ```bash
+    git clone https://github.com/rgiosa10/data-engineering-bootcamp.git
+    ```
 *  Then go to data-engineering-bootcamp/deb/ch06_sql/graded-projects/ and start the MariaDB Docker container 
-  ```bash
-  ./start_db.sh
-  ```
+    ```bash
+    ./start_db.sh
+    ```
 * Then go to Beekeeper and connect with the below information:
     * host: 127.0.0.1
     * user: root
