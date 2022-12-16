@@ -92,3 +92,9 @@ SELECT AVG(num_parts) as avg_parts
 FROM sets
 WHERE year > 1999;
 
+-- Using GROUP BY, show the average number of parts for each theme_id in sets.
+
+SELECT theme_id, AVG(num_parts) as avg_parts
+FROM sets
+GROUP BY theme_id;
+
