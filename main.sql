@@ -86,3 +86,9 @@ SELECT SUM(num_parts) as total_parts
 FROM sets
 WHERE year > 1999;
 
+-- Show the average number of parts for sets that came out since the year 2000.
+
+SELECT AVG(num_parts) as avg_parts
+FROM sets
+WHERE year > 1999;
+
