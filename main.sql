@@ -10,3 +10,15 @@ WHERE name LIKE '%Hair%' ORDER BY part_num DESC;
 SELECT *
 FROM sets
 WHERE name like '%Showdown%' AND (year BETWEEN 1990 and 2015);
+
+-- Aliasing the part_categories table as p, show the id and name of the values in that table where the name includes the word 'Bricks'
+
+SELECT id, name
+FROM part_categories AS p
+WHERE name like '%Bricks%';
+
+-- or could right below as well but best practice would be above as it is only referencing one table
+
+SELECT id, name
+FROM part_categories AS p
+WHERE p.name like '%Bricks%';
